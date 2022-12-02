@@ -7,6 +7,8 @@ body {
   padding: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  font-size: 21px;
+  color: #37293a;
   background-color: #E8C2CA; 
 }
 
@@ -59,21 +61,121 @@ header h1 {
   text-decoration: underline;
 }
 
+/* Banner and Profile pic*/
 .hero-banner {
-  background-image: url("/images/02-hero-bg.jpg");
-  opacity: 0.9;
+  background-image: url("/images/bluesky2.png");
   height: 400px;
   width: 100%;
   position: relative;
   text-align: center;
 }
 
+#bannerContent img {
+  position: absolute;
+  width: auto;
+  opacity: 0.9;
+  z-index: 1;
+  height: 399px;
+  bottom: 1px;
+  right: 75px;
+  border: 5px solid #ffffff;
+  border-radius: 50px;
+}
+
 #heroText {
   position: absolute;
+  z-index: 2;
   bottom: 25px;
-  right: 75px;
+  right: 1px;
   font-size: 45px;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 80px 10px 180px;
   color: #37293a;
   background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50px 0px 0px 50px;
+}
+
+/*Page body grid*/
+.page-wrapper {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 25% 75% 25%;
+  grid-template-areas: 
+  "aboutTitle aboutParagraph"
+  "workTitle workLinks"
+  "contactTitle contactInfo";
+}
+
+.aboutTitle {
+  grid-area: aboutTitle;
+  border: 5px solid red;
+}
+
+.aboutParagraph {
+  grid-area: aboutParagraph;
+  border: 5px solid black;
+}
+
+.workTitle {
+  grid-area: workTitle;
+  border: 5px solid red;
+}
+
+.workLinks {
+  grid-area: workLinks;
+  border: 5px solid black;
+}
+
+.contactTitle {
+  grid-area: contactTitle;
+  border: 5px solid red;
+}
+
+.contactInfo {
+  grid-area: contactInfo;
+  border: 5px solid black;
+}
+
+/*About me content*/
+
+#about h2 {
+  font-size: 80px;
+}
+
+/*Portfolio content*/
+
+#work h2 {
+  font-size: 80px;
+}
+
+#linkOne {
+  width: 600px;
+  height: 300px;
+}
+
+#linkTwo {
+  width: 600px;
+  height: 300px;
+}
+#linkThree {
+  width: 600px;
+  height: 300px;
+}
+
+#linkFour {
+  width: 600px;
+  height: 300px;
+}
+
+#linkFive {
+  width: 600px;
+  height: 300px;
+}
+
+/*Contact content*/
+
+#contact h2 {
+  font-size: 80px;
 }
