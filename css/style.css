@@ -4,9 +4,10 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: #E8C2CA; 
 }
 
 h1,
@@ -20,4 +21,59 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/*Header and Nav bar*/
+header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #735D78;
+  padding: 10px
+}
+
+#navBar li {
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: 20px;
+  padding-top: 10px;
+
+}
+
+#navBar li a {
+  text-decoration: none;
+  color: #F7D1CD;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header h1 {
+  padding-top: 10px;
+  padding-left: 50px;
+  font-size: 45px;
+  color: #F7D1CD;
+}
+
+.Emma {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.hero-banner {
+  background-image: url("/images/02-hero-bg.jpg");
+  opacity: 0.9;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#heroText {
+  position: absolute;
+  bottom: 25px;
+  right: 75px;
+  font-size: 45px;
+  padding: 10px 30px 10px 30px;
+  color: #37293a;
+  background-color: rgba(255, 255, 255, 0.6);
 }
