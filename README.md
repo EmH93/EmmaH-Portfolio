@@ -29,8 +29,6 @@ Sections 1 and 2 are shown in the image below:
 
 ![Screenshot showing the Contact me area of the portfolio](./images/Screenshot3.PNG)
 
-Provide instructions and examples for use. Include screenshots as needed.
-
 
 ## Credits
 
